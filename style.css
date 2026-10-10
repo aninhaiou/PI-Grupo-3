@@ -5,6 +5,9 @@
 
     --branco: #ffffff;
 
+    --amarelo: #f59e0b;
+    --marrom: #3b1e08;
+
     --cinza-claro: #f4f7fc;
     --cinza: #65718a;
 
@@ -334,7 +337,6 @@ a {
     min-height: 510px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: var(--azul-escuro);
     color: white;
     overflow: hidden;
 }
@@ -364,15 +366,18 @@ a {
 }
 
 .informacoes-banux h4 {
+    color: var(--marrom);
     font-size: 22px;
     margin: 15px 0;
 }
 
 .descricao-banux {
+    color: var(--marrom);
     font-family: Arial, sans-serif;
     line-height: 1.7;
     opacity: 0.7;
     max-width: 500px;
+    align-items: end;
 }
 
 .tags {
