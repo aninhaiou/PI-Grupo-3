@@ -1,0 +1,103 @@
+:root {
+    --marrom: #3b1e08;
+    --amarelo: #f59e0b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lekton', 'Courier New', monospace;
+    color: var(--texto);
+    background: var(--branco);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* cabeçalho */
+
+.header {
+    height: 78px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--marrom);
+    color: white;
+    border-bottom: 1px solid
+      rgba(255, 255, 255, 0.12);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo-icon {
+    width: 28px;
+    height: 28px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 11px;
+}
+
+.menu {
+    display: flex;
+    gap: 35px;
+    font-size: 14px;
+}
+
+.menu a {
+    opacity: 0.75;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    opacity: 1;
+}
+
+.botao-menu {
+    padding: 11px 17px;
+    border: 1px solid
+    rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.botao-menu:hover {
+    background: white;
+    color: var(--marrom);
+}
+
+.inicio {
+    min-height: 760px;
+    padding: 160px 7% 100px;
+    display: grid;
+    grid-template-columns:
+        1.1fr 0.9fr;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    color: var(--marrom);
+}
