@@ -1,33 +1,133 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Banux | Solução Digital</title>
-
+    <title>BANUX - Logística da Banana</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- menu -->
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="logo">
+            <img src="logo-banux.png" alt="Logo do BANUX">
+        </div>
 
-    <header class="header">
-
-        <a href="#inicio" class="logo">
-            <span class="logo-icon">◉</span>
-            BANUX
-        </a>
-
-        <nav class="menu">
-            <a href="#sobre">Sobre o Banux</a>
-            <a href="#solucoes">Soluções</a>
+        <nav>
+            <a href="#inicio" class="ativo">Início</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#resultados">Resultados</a>
+            <a href="#contato">Fale conosco</a>
         </nav>
-
-        <a href="#contato" class="botao-menu">
-            <strong>Fale conosco</strong>
-        </a>
-
     </header>
+
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+        <section id="inicio" class="apresentacao">
+
+            <div class="texto">
+                <h1>Uma nova forma de cuidar da logística da banana</h1>
+
+                <p>
+                    O BANUX é um projeto que busca facilitar a rotina
+                    da produção de bananas, conectando o cultivo,
+                    o transporte e a distribuição em um só lugar.
+                </p>
+
+                <a href="#resultados" class="botao">
+                    Conheça o projeto
+                </a>
+            </div>
+
+            <div class="imagem-mockup">
+                <img src="mockup.png" alt="Mockup do aplicativo BANUX">
+            </div>
+
+        </section>
+
+        <!-- SOBRE O PROJETO -->
+        <section id="sobre" class="sobre">
+            <h2>Sobre o BANUX</h2>
+
+            <p>
+                O BANUX foi pensado para ajudar no acompanhamento
+                da produção, no controle do estoque e no transporte
+                das bananas. A proposta é reunir essas informações
+                para tornar o trabalho mais simples e organizado.
+            </p>
+        </section>
+
+        <!-- TELAS DO FIGMA -->
+        <section id="resultados" class="resultados">
+
+            <h2>Resultados do projeto</h2>
+
+            <p class="subtitulo">
+                Conheça algumas das telas desenvolvidas para o BANUX.
+            </p>
+
+            <div class="telas">
+
+                <div class="card">
+                    <img src="tela-inicio.png" alt="Tela inicial do BANUX">
+                    <h3>Início</h3>
+                    <p>Acompanhe as informações da produção.</p>
+                </div>
+
+                <div class="card">
+                    <img src="tela-estoque.png" alt="Tela de estoque">
+                    <h3>Estoque</h3>
+                    <p>Consulte os dados do estoque de bananas.</p>
+                </div>
+
+                <div class="card">
+                    <img src="tela-transporte.png" alt="Tela de transporte">
+                    <h3>Transporte</h3>
+                    <p>Acompanhe o transporte das cargas.</p>
+                </div>
+
+                <div class="card">
+                    <img src="tela-entregas.png" alt="Tela de entregas">
+                    <h3>Entregas</h3>
+                    <p>Visualize as entregas e seus status.</p>
+                </div>
+
+                <div class="card">
+                    <img src="tela-relatorios.png" alt="Tela de relatórios">
+                    <h3>Relatórios</h3>
+                    <p>Consulte informações da produção.</p>
+                </div>
+
+            </div>
+
+            <div class="botao-app">
+                <a href="#contato" class="botao">Saiba mais</a>
+            </div>
+
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="contato">
+            <h2>Fale conosco</h2>
+            <p>Quer saber mais sobre o nosso projeto?</p>
+            <a href="mailto:contato@banux.com.br">
+                Entre em contato
+            </a>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>© 2026 BANUX - Projeto Integrador</p>
+    </footer>
+
+</body>
+</html>
+
+
