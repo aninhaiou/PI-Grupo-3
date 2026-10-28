@@ -30,10 +30,16 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo img {
-    width: 75px;
+    width: 55px;
     height: 55px;
     object-fit: contain;
 }
@@ -55,6 +61,10 @@ nav a:hover,
 nav a:focus {
     color: #F59E0B;
     font-weight: bold;
+}
+
+.main {
+    padding-top: 85px;
 }
 
 /* PRIMEIRA PARTE DO SITE */
