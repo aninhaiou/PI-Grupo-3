@@ -40,6 +40,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #07358f;
     position: absolute;
     top: 0;
     left: 0;
@@ -56,22 +57,29 @@ a {
     z-index: 1000;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 700;
-    letter-spacing: 2px;
+.logo-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 60px; 
+  background-color: #003366; 
 }
 
-.logo-icon {
-    width: 28px;
-    height: 28px;
-    border: 2px solid currentColor;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-size: 11px;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre o logo e a palavra */
+}
+
+.logo img {
+  height: 40px; /* altura da logo, ajuste conforme necessário */
+}
+
+.logo strong {
+  color: white;
+  font-weight: bold;
+  font-size: 24px; /* ajuste para o tamanho desejado */
+  line-height: 1;
 }
 
 .menu {
@@ -99,7 +107,7 @@ a {
 
 .botao-menu:hover {
     background: white;
-    color: var(--azul);
+    color: #07358f;
 }
 
 /* inicio */
@@ -326,9 +334,9 @@ a {
 
 .integrante img {
     width: 150px;
-    height: 150px;
+    height: 190px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 .integrante h3 {
@@ -375,6 +383,13 @@ a {
     font-weight: bold;
 }
 
+footer {
+    background-color: #002781;
+    color: #FFFDF5;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
 
 /* MENU ATIVO COM CSS */
 
