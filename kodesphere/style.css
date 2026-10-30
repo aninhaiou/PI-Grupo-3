@@ -129,7 +129,7 @@ a {
 .grade {
     position: absolute;
     inset: 0;
-    opacity: 0.12;
+    opacity: 0.05;
     background-image:
         linear-gradient(
             rgba(255,255,255,0.4) 1px,
@@ -141,6 +141,14 @@ a {
             transparent 1px
         );
     background-size: 55px 55px;
+}
+
+.img_fachada {
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 665px;
 }
 
 /* conteudo */
