@@ -1,4 +1,50 @@
 
+/* Ajuste exclusivo para aumentar a altura do cabeçalho no mobile */
+@media (max-width: 768px) {
+    .header {
+        height: 160px;              /* Aumenta o tamanho da barra azul para caber tudo */
+        flex-direction: column;     /* Coloca a logo em cima e os links embaixo */
+        justify-content: center;    /* Centraliza o conteúdo verticalmente */
+        gap: 12px;                  /* Dá um espaço firme entre a logo, os links e o botão */
+        padding: 10px 0;
+    }
+
+    .menu {
+        gap: 15px;                  /* Deixa os links mais juntinhos para caberem na tela */
+    }
+
+    .botao-menu {
+        margin-top: 5px;            /* Alinha o botão logo abaixo dos links com um espaço controlado */
+    }
+
+     /* Ajuste cirúrgico para alinhar perfeitamente de borda a borda no celular */
+    .fotos-equipe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Empurra as fotos para as extremidades exatas da tela */
+        gap: 15px;                      /* Espaço controlado entre elas */
+        width: 100%;                    /* Força o contêiner a ocupar a largura total do celular */
+        padding: 0;                     /* Remove recuos que jogam as fotos para o lado */
+        margin-top: 25px;
+    }
+
+    /* Ajusta as caixinhas para dividirem o espaço perfeitamente em duas colunas */
+    .integrante {
+        width: calc(50% - 8px);         /* Faz caber exatamente 2 fotos por linha, lado a lado, sem errar */
+        text-align: center;
+    }
+
+    /* Mantém a foto inteira, sem nenhum tipo de zoom ou corte na cabeça */
+    .integrante img {
+        width: 100%;                    /* Ocupa todo o espaço da coluna */
+        height: 100px;                   /* Altura flui naturalmente para não cortar ninguém */
+        object-fit: contain;            /* Garante o enquadramento perfeito da cabeça aos ombros */
+        border-radius: 10%;
+    }
+
+
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap');
 
 :root {
@@ -446,6 +492,7 @@ a {
     flex-wrap: wrap;
     gap: 25px;
     margin-top: 30px;
+    justify-content: center;
 }
 
 .integrante {
@@ -613,7 +660,7 @@ a {
 
 .footer{
 
-    background:#002781;
+    background:#07358f;
     color:white;
     margin-top:60px;
 
