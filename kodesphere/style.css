@@ -446,6 +446,7 @@ a {
     flex-wrap: wrap;
     gap: 25px;
     margin-top: 30px;
+    justify-content: center;
 }
 
 .integrante {
@@ -613,7 +614,7 @@ a {
 
 .footer{
 
-    background:#002781;
+    background:#07358f;
     color:white;
     margin-top:60px;
 
@@ -947,4 +948,81 @@ body:has(#valores:target)
 
     line-height:1.6;
 
+}
+
+.solucoes {
+    scroll-margin-top: 190px;    
+}
+
+.sobre {
+    scroll-margin-top: 250px;
+}
+
+.projeto {
+    scroll-margin-top: 160px;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;    
+        gap: 10px;                  
+        padding: 12px 10px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .botao-menu {
+        padding: 5px 10px;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .inicio {
+        padding-top: 180px !important;
+    }
+
+    .sobre {
+    scroll-margin-top: 300px;
+    }
+
+    .solucoes {
+    scroll-margin-top: 160px;    
+    }
+
+    .contato {
+        scroll-margin-top: 110px;
+    }
+
+    .fotos-equipe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;        
+        gap: 15px;                      
+        width: 100%;                    
+        padding: 0 10px;                     
+        margin-top: 25px;
+    }
+
+    .integrante {
+        width: calc(50% - 8px);         
+        text-align: center;
+    }
+
+    .integrante img {
+        width: 100%;                    
+        height: auto;                   
+        object-fit: contain;            
+        border-radius: 10%;
+    }
 }
